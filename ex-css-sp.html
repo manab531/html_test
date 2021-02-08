@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="jp" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS練習（富士山）</title>
+    <style>
+    /* ここに練習問題のとおりCSSを作ってください */
+body{
+  width: 800px;
+  border-left: solid 5px #020202;
+  border-right: solid 5px #020202;
+  margin: auto;
+}
+header{
+  height: 150px;
+  background-image: url("mt-fuji.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+h1{
+  font-size: 40px;
+  font-family: fantasy;
+  color: #865478;
+  margin-left: 50px;
+  margin-top: 20px;
+
+}
+nav{
+  background-color: #abcdef;
+  border-top: solid 2px #986532;
+  border-bottom: solid 2px #986532;
+}
+nav ul{
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+
+}
+nav ul li{
+  width: 130px;
+  background-color: #655487;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow:  5px 5px;
+}
+nav ul li:hover{
+  width: 180px;
+  box-shadow: -5px -5px;
+}
+main{
+  background-color: #a1a1a1;
+  padding: 0px 20px 20px 20px;
+}
+main h2{
+  width: 600px;
+  background-color: #8c998c;
+  border: solid 2px #321321;
+  text-align: center;
+  margin-bottom: 0px;
+  border-bottom: none;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px 10px 0px 0px;
+  box-shadow: 10px 10px 15px;
+}
+main .contents{
+  width: 600px;
+  background-color: #8c8c8c;
+  border: solid 2px #321321;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px 10px 10px 10px;
+  padding: 0px 10px 0px 10px;
+  box-shadow: 10px 10px 15px;
+
+}
+th,td{
+  border:solid 1px #326598;
+}
+table{
+  border-collapse: collapse;
+}
+th{
+  background-color: #9aba05;
+}
+.head-1{
+  width: 400px;
+  }
+.head-2,.head-2{
+    width: 100px;
+    }
+    .center{
+      text-align: center;
+    }
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>富士山（Mt.Fuji）</h1>
+    </header>
+    <nav>
+      <ul>
+        <!-- ここに練習問題のとおりリンクを作ってください  -->
+        <li><a href="#heading-1">高さ、温度</a></li>
+        <li><a href="#heading-2">噴火</a></li>
+        <li><a href="#heading-3">世界の山</a></li>
+        <li><a href="#heading-4">世界遺産</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2 id="heading-1">富士山の高さ＆山頂（さんちょう）の気温（きおん）</h2>
+      <div class="contents">
+        <p>高さは3,775.63m</p>
+        <p>1月の平均（へいきん）マイナス18.5℃（ど）<br>8月の平均（へいきん）6.0℃（ど）</p>
+      </div>
+      <h2 id="heading-2">富士山は噴火（ふんか）するの？</h2>
+      <div class="contents">
+        <p>
+          富士山は、大昔（おおむかし）から何回（なんかい）も噴火（ふんか）しています。富士山が最後（さいご）に噴火（ふんか）したのは、今から約（やく）300年前の江戸時代（えどじだい）です。
+        </p>
+      </div>
+      <h2 id="heading-3">山の高さをくらべてみよう</h2>
+      <div class="contents">
+        <p>世界（せかい）の山
+          <ol>
+            <li><b>エベレスト：8,848m<u>ネパール"Nepal"）</u></b></li>
+            <li><b>K2(ケーツー)：8,611m<u>（パキスタン"Pakistan"）</u></b></li>
+            <li><b>カチェンジュンガ：8,586m<u>（ネパール"Nepal"）</u></b></li>
+          </ol>
+
+        </p>
+
+      </div>
+      <h2 id="heading-4">日本の世界遺産（せかいいさん）を知ろう</h2>
+      <div class="contents">
+      <h3>文化遺産（ぶんかいさん）</h3>
+      <table>
+        <thead>
+          <tr>
+            <th class="head-1">世界遺産の名前</th>
+            <th class="head-2">登録年</th>
+            <th class="head-3">所在地</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>法隆寺（ほうりゅうじ）<br>地域（ちいき）の仏教建造物（ぶっきょうけんぞうぶつ）</td>
+            <td class="center">1993年</td>
+            <td class="center">奈良県</td>
+          </tr>
+          <tr>
+            <td>姫路城（ひめじじょう）</td>
+            <td class="center">1993年</td>
+            <td class="center">兵庫県</td>
+          </tr>
+          <tr>
+            <td>古都（こと）京都（きょうと）の文化財（ぶんかざい）</td>
+            <td class="center">1994年</td>
+            <td class="center">京都府<br>滋賀県</td>
+          </tr>
+          <tr>
+            <td>白川郷（しらかわごう）<br>五箇山（ごかやま）の合掌造り（がっしょうづくり）集落（しゅうらく）</td>
+            <td class="center">1995年</td>
+            <td class="center">岐阜県<br>富山県</td>
+          </tr>
+          <tr>
+            <td>原爆（げんばく）ドーム</td>
+            <td class="center">1996年</td>
+            <td class="center">広島県</td>
+          </tr>
+          <tr>
+            <td>厳島神社（いつくしまじんじゃ）</td>
+            <td class="center">1996年</td>
+            <td class="center">広島県</td>
+          </tr>
+          <tr>
+            <td>古都（こと）奈良（なら）の文化財（ぶんかざい）</td>
+            <td class="center">1998年</td>
+            <td class="center">奈良県</td>
+          </tr>
+          <tr>
+            <td>日光（にっこう）の社寺（しゃじ）</td>
+            <td class="center">1999年</td>
+            <td class="center">栃木県</td>
+          </tr>
+          <tr>
+            <td>琉球王国（りゅうきゅうおうこく）のグスク及び関連遺産群（かんれんいさんぐん）</td>
+            <td class="center">2000年</td>
+            <td class="center">沖縄県</td>
+          </tr>
+          <tr>
+            <td>紀伊山地（きいさんち）の霊場（れいじょう）と参詣道（さんけいみち）</td>
+            <td class="center">2004年</td>
+            <td class="center">三重県<br>奈良県<br>和歌山県</td>
+          </tr>
+          <tr>
+            <td>石見銀山遺跡（いわみぎんざんいせき）とその文化的景観（ぶんかてきけいかん）</td>
+            <td class="center">2007年</td>
+            <td class="center">島根県</td>
+          </tr>
+          <tr>
+            <td>平泉 - 仏国土：浄土（ぶっこくど：じょうど）を表す建築（けんちく）<br>庭園（ていえん）及び考古学的遺跡群（こうこがくてきいせきぐん）</td>
+            <td class="center">2011年</td>
+            <td class="center">岩手県</td>
+          </tr>
+          <tr>
+            <td>富士山（ふじさん）- 信仰の対象（しんこうのたいしょう）と芸術の源泉（げいじゅつのげんせん）</td>
+            <td class="center">2013年</td>
+            <td class="center">山梨県<br>静岡県</td>
+          </tr>
+          <tr>
+            <td>富岡製糸場（とみおかせいしじょう）と絹産業遺産群（きぬさんぎょういさんぐん）</td>
+            <td class="center">2014年</td>
+            <td class="center">群馬県</td>
+          </tr>
+        </tbody>
+      </table>
+      <hr>
+      <img src="pic_002-04.jpg" width="601">
+      <h3>自然遺産（しぜんいさん）</h3>
+      <table>
+        <thead>
+          <tr>
+            <th class="head-1">世界遺産の名前</th>
+            <th class="head-2">登録年</th>
+            <th class="head-3">所在地</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>白神山地（しらかみさんち）</td>
+            <td class="center">1993年</td>
+            <td class="center">青森県<br>秋田県</td>
+          </tr>
+          <tr>
+            <td>屋久島（やくしま）</td>
+            <td class="center">1993年</td>
+            <td class="center">鹿児島県</td>
+          </tr>
+          <tr>
+            <td>知床（しれとこ）</td>
+            <td class="center">2005年</td>
+            <td class="center">北海道</td>
+          </tr>
+          <tr>
+            <td>小笠原諸島（おがさわらしょとう）</td>
+            <td class="center">2011年</td>
+            <td class="center">東京都</td>
+          </tr>
+        </tbody>
+      </table>
+      <hr>
+      <img src="pic_002-05.jpg" width="601">
+    </div>
+
+    </main>
+  </body>
+</html>
